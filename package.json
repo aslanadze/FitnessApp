@@ -1,0 +1,9 @@
+{
+  "name": "fitness-app-monorepo",
+  "private": true,
+  "scripts": {
+    "mobile": "cd apps/mobile && expo start",
+    "android": "cd apps/mobile && expo start --android",
+    "ios": "cd apps/mobile && expo start --ios"
+  }
+}
