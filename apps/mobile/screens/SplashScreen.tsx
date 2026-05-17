@@ -1,7 +1,8 @@
 import React from "react";
 import {useEffect, useRef} from "react";
-import {View, Animated, StyleSheet, Text} from "react-native";
-import {StackNavigationProp} from "@react-navigation/stack";
+import {View, Animated, ActivityIndicator, StyleSheet, Text} from "react-native";
+import {Dumbbell} from "lucide-react-native";
+
 
 interface SplashScreenProps {
     navigation: any
@@ -31,24 +32,24 @@ const SplashScreen: React.FC<SplashScreenProps> = ({navigation}) => {
     }, []);
 
     return (
-        <View>
-            <Animated.Image source={require('../assets/39d6892e4758ab23644379ca8958b118.jpg')}
-                            style={[styles.logo, {
-                                opacity: fadeAnim,
-                                transform: [{scale: scaleAnim}]
-                            }]}
-            />
+        <View
+            style={{
+                flex: 1,
+                alignItems: "center",
+                backgroundColor: '#6f51ec',
+                justifyContent: "center",
+                gap: 100
+            }}>
+            <Dumbbell color={"white"} size={200}/>
 
-            <Text>
-                Hello
-            </Text>
+            <ActivityIndicator size={'large'} color={"white"}/>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {flex: 1, backgroundColor: '#0D9488'},
-    logo: {width: 120, height: 120}
+    logo: {width: 100, height: 120}
 });
 
 export default SplashScreen;

@@ -1,10 +1,11 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {NavigationContainer} from "@react-navigation/native";
 import SplashScreen from "../screens/SplashScreen";
+import WelcomeScreen from "../screens/WelcomeScreen";
 
 export type RootStackParamList = {
     Splash: undefined;
-    // Welcome: undefined;
+    Welcome: undefined;
     // Intro: { step: number };
     // Gender: undefined;
     // Age: undefined;
@@ -29,6 +30,7 @@ export default function AppNavigator() {
             >
 
                 <Stack.Screen name={"Splash"} component={SplashScreen}/>
+                <Stack.Screen name={"Welcome"} component={WelcomeScreen}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
