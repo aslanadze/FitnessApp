@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------------------
+# Node / Packages
+# ---------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+eslintcache
+.pnpm-debug.log*
+
+# ---------------------------------------------------------------------------
+# Expo / Metro
+# ---------------------------------------------------------------------------
+.expo/
+dist/
+web-build/
+.eas/
+prebuild/
+
+# ---------------------------------------------------------------------------
+# TypeScript & Build Outputs
+# ---------------------------------------------------------------------------
+*.tsbuildinfo
+.tsconfig.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# iOS
+# ---------------------------------------------------------------------------
+ios/Pods/
+ios/.xcode.env.local
+ios/build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
+.Xauthority
+
+# ---------------------------------------------------------------------------
+# Android
+# ---------------------------------------------------------------------------
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+*.iml
+*.bundle
+.idea/modules.xml
+.idea/workspace.xml
+.gradle/
+
+# ---------------------------------------------------------------------------
+# IDEs & System Files
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Environment Variables
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.local
