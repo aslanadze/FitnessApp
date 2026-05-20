@@ -18,7 +18,9 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> =
                                  resizeMode={'cover'}
                 >
                     <View style={styles.darkOverlay}>
+
                         <View style={styles.bottomContainer}>
+
                             <Text style={styles.welcomeText}>
                                 Welcome to
                                 <HeartHandshake color={"#ffdf00"} size={40}/>
@@ -32,12 +34,13 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> =
                                 Track your workouts, set custom goals, and stay consistent every single day.
                             </Text>
                             <TouchableOpacity style={styles.button} activeOpacity={0.8}
-                                              onPress={() => navigation.replace("Splash")}>
+                                              onPress={() => navigation.replace("Intro")}>
                                 <Text style={styles.buttonText}>
                                     Get Started
                                 </Text>
                                 <ArrowRight color={"#ffffff"} size={20} strokeWidth={2.5}/>
                             </TouchableOpacity>
+
                         </View>
 
 
@@ -56,6 +59,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#000000"
     },
+
     darkOverlay: {
         flex: 1,
         backgroundColor: 'rgba(0,0,0,0.55)',
@@ -73,19 +77,22 @@ const styles = StyleSheet.create({
         fontSize: 36,
         fontWeight: "bold",
         lineHeight: 44,
-        marginBottom: 12
+        marginBottom: 12,
+
+
     },
 
     subTitleText: {
         color: '#ffffff',
         fontSize: 60,
         fontWeight: 'bold',
-        textAlign: 'justify'
+        textAlign: 'justify',
+
     },
     description: {
         paddingTop: 20,
         color: '#ffffff',
-        fontSize: 24,
+        fontSize: 17,
         fontWeight: 'light'
     },
     button: {
