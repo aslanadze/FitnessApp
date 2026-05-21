@@ -69,7 +69,7 @@ const ActivityLevelScreen: React.FC<ActivityLevelScreenProps> = ({navigation}) =
                                 transform: [{scale: isSelected ? 1.001 : 1}]
                             }}
                         >
-                            <Text style={{fontSize: 22,textAlign:'center', fontWeight: 'bold', color: '#fff'}}>
+                            <Text style={{fontSize: 22, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
                                 {item.title}
                             </Text>
                         </TouchableOpacity>
@@ -87,7 +87,7 @@ const ActivityLevelScreen: React.FC<ActivityLevelScreenProps> = ({navigation}) =
                         alignItems: 'center'
                     }}
                     onPress={() => {
-                        navigation.replace("ActivityLevel")
+                        navigation.replace("ProfileSetup")
                     }}
                 >
                     <Text style={{

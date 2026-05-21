@@ -9,6 +9,8 @@ import WeightScreen from "../screens/WeightScreen";
 import HeightScreen from "../screens/HeightScreen";
 import GoalsScreen from "../screens/GoalsScreen";
 import ActivityLevelScreen from "../screens/ActivityLevelScreen";
+import ProfileSetupScreen from "../screens/ProfileSetupScreen";
+import RegisterCompleteScreen from "../screens/RegisterCompleteScreen";
 
 export type RootStackParamList = {
     Splash: undefined;
@@ -20,11 +22,11 @@ export type RootStackParamList = {
     Height: undefined;
     Goals: undefined;
     ActivityLevel: undefined;
-    // ProfileSetup: undefined;
+    ProfileSetup: undefined;
     // ProfileComplete: undefined;
     // Login: undefined;
     // Register: undefined;
-    // RegisterComplete: undefined;
+    RegisterComplete: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -45,6 +47,8 @@ export default function AppNavigator() {
                 <Stack.Screen name={"Height"} component={HeightScreen}/>
                 <Stack.Screen name={"Goals"} component={GoalsScreen}/>
                 <Stack.Screen name={"ActivityLevel"} component={ActivityLevelScreen}/>
+                <Stack.Screen name={"ProfileSetup"} component={ProfileSetupScreen}/>
+                <Stack.Screen name={"RegisterComplete"} component={RegisterCompleteScreen}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
