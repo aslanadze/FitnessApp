@@ -5,6 +5,10 @@ import WelcomeScreen from "../screens/WelcomeScreen";
 import IntroScreen from "../screens/IntroScreen";
 import GenderScreen from "../screens/GenderScreen";
 import AgeScreen from "../screens/AgeScreen";
+import WeightScreen from "../screens/WeightScreen";
+import HeightScreen from "../screens/HeightScreen";
+import GoalsScreen from "../screens/GoalsScreen";
+import ActivityLevelScreen from "../screens/ActivityLevelScreen";
 
 export type RootStackParamList = {
     Splash: undefined;
@@ -12,10 +16,10 @@ export type RootStackParamList = {
     Intro: undefined;
     Gender: undefined;
     Age: undefined;
-    // Weight: undefined;
-    // Height: undefined;
-    // Goals: undefined;
-    // ActivityLevel: undefined;
+    Weight: undefined;
+    Height: undefined;
+    Goals: undefined;
+    ActivityLevel: undefined;
     // ProfileSetup: undefined;
     // ProfileComplete: undefined;
     // Login: undefined;
@@ -37,6 +41,10 @@ export default function AppNavigator() {
                 <Stack.Screen name={"Intro"} component={IntroScreen}/>
                 <Stack.Screen name={"Gender"} component={GenderScreen}/>
                 <Stack.Screen name={"Age"} component={AgeScreen}/>
+                <Stack.Screen name={"Weight"} component={WeightScreen}/>
+                <Stack.Screen name={"Height"} component={HeightScreen}/>
+                <Stack.Screen name={"Goals"} component={GoalsScreen}/>
+                <Stack.Screen name={"ActivityLevel"} component={ActivityLevelScreen}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

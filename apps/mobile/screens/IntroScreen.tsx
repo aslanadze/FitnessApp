@@ -10,15 +10,15 @@ interface IntroScreenProps {
 const IntroScreen: React.FC<IntroScreenProps> = ({navigation}: IntroScreenProps) => {
 
     const introSteps = [
-        {id: 1, image: require('../assets/WelcomeScreenImage.jpg'), text: 'Find the right workout for what you need'},
+        {id: 1, image: require('../assets/sushil-ghimire-5UbIqV58CW8-unsplash.jpg'), text: 'Find the right workout for what you need'},
         {
             id: 2,
-            image: require('../assets/39d6892e4758ab23644379ca8958b118.jpg'),
+            image: require('../assets/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg'),
             text: 'Make suitable workouts and great results'
         },
         {
             id: 3,
-            image: require('../assets/39d6892e4758ab23644379ca8958b118.jpg'),
+            image: require('../assets/victor-freitas-WvDYdXDzkhs-unsplash.jpg'),
             text: 'Lets do a workout and live healthy with us'
         }
     ];
