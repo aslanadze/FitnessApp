@@ -15,16 +15,16 @@ const GenderScreen: React.FC<GenderScreenProps> = ({navigation}) => {
             flex: 1,
             justifyContent: "space-between",
             paddingHorizontal: 24,
-            paddingTop: 80,
+            paddingTop: 40,
             paddingBottom: 40,
             gap: 20,
             backgroundColor: '#1f2129'
         }}>
             <View style={{gap: 16, alignItems: 'center'}}>
 
-                <Text style={{fontSize: 35, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>Tell Us About
+                <Text style={{fontSize: 25, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>Tell Us About
                     Yourself</Text>
-                <Text style={{fontSize: 20, textAlign: "center", color: 'white', fontWeight: 'ultralight'}}>To give you
+                <Text style={{fontSize: 15, textAlign: "center", color: 'white', fontWeight: 'ultralight'}}>To give you
                     a
                     better
                     experience, we need
@@ -88,7 +88,7 @@ const GenderScreen: React.FC<GenderScreenProps> = ({navigation}) => {
                 <TouchableOpacity style={{
                     backgroundColor: '#007bff',
                     width: '100%',
-                    paddingVertical: 16,
+                    paddingVertical: 10,
                     borderRadius: 30,
                     justifyContent: 'center',
                     alignItems: 'center'
@@ -100,7 +100,7 @@ const GenderScreen: React.FC<GenderScreenProps> = ({navigation}) => {
                     <Text style={
                         {
                             color: '#ffffff',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: 'bold',
                             padding: 10,
                             borderRadius: 5,

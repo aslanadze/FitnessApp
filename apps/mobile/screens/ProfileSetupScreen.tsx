@@ -50,18 +50,18 @@ const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({navigation}) => 
                               style={{
                                   flex: 1,
                                   backgroundColor: '#1f2129',
-                                  paddingHorizontal: 24,
-                                  paddingTop: 80,
-                                  paddingBottom: 40,
+                                  // paddingHorizontal: 24,
+                                  paddingTop: 40,
+                                  paddingBottom: 25,
                                   justifyContent: 'space-between'
                               }}
         >
             <View style={{gap: 16, alignItems: 'center'}}>
-                <Text style={{fontSize: 35, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
+                <Text style={{fontSize: 25, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
                     Fill Your Profile
                 </Text>
                 <Text style={{
-                    fontSize: 20,
+                    fontSize: 15,
                     textAlign: 'center',
                     color: 'white', fontWeight: "ultralight"
                 }}>
@@ -170,11 +170,12 @@ const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({navigation}) => 
                     backgroundColor: (fullName && email && phoneNumber) ? '#007bff' : '#4e515c',
                     opacity: (fullName && email && phoneNumber) ? 1 : 0.5,
                     width: '100%',
-                    paddingVertical: 16,
+                    paddingVertical: 20,
                     borderRadius: 30,
                     flexDirection: 'row',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    padding: 5,
                     gap: 8
                 }}
                                   onPress={() => navigation.navigate('RegisterComplete')}

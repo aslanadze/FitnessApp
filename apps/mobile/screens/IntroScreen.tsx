@@ -10,7 +10,11 @@ interface IntroScreenProps {
 const IntroScreen: React.FC<IntroScreenProps> = ({navigation}: IntroScreenProps) => {
 
     const introSteps = [
-        {id: 1, image: require('../assets/sushil-ghimire-5UbIqV58CW8-unsplash.jpg'), text: 'Find the right workout for what you need'},
+        {
+            id: 1,
+            image: require('../assets/sushil-ghimire-5UbIqV58CW8-unsplash.jpg'),
+            text: 'Find the right workout for what you need'
+        },
         {
             id: 2,
             image: require('../assets/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg'),
@@ -35,18 +39,40 @@ const IntroScreen: React.FC<IntroScreenProps> = ({navigation}: IntroScreenProps)
 
     return (
         <View style={{flex: 1, justifyContent: 'space-between', alignItems: 'center'}}>
-            <Image source={introSteps.find(c => c.id == currentStep)?.image} style={{width: '100%', height: '70%'}}
-                   resizeMode={'center'}/>
+            {/*<Image source={introSteps.find(c => c.id == currentStep)?.image} style={{width: '100%', height: '60%'}}*/}
+            {/*       resizeMode={'cover'}/>*/}
+            <View style={{width: '100%', height: '60%', position: 'relative'}}>
+                {introSteps.map((step) => {
+                    const isVisible = step.id === currentStep;
+                    return (
+                        <Image
+                            key={step.id}
+                            source={step.image}
+                            resizeMode={"cover"}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                opacity: isVisible ? 1 : 0,
+                                zIndex: isVisible ? 1 : 0
+                            }}
+                        />
+                    )
+                })}
+            </View>
 
             <View style={{
                 flex: 1,
                 gap: 10,
                 justifyContent: 'center',
                 alignItems: 'center',
+                paddingHorizontal: 20,
                 backgroundColor: '#1f2129',
             }}>
                 <Text style={{
-                    fontSize: 37,
+                    fontSize: 20,
                     fontWeight: 'bold',
                     lineHeight: 50,
                     color: '#ffffff',
@@ -66,8 +92,8 @@ const IntroScreen: React.FC<IntroScreenProps> = ({navigation}: IntroScreenProps)
                 <TouchableOpacity style={{
                     flexDirection: 'row',
                     backgroundColor: '#007bff',
-                    width: '80%',
-                    paddingVertical: 10,
+                    width: '100%',
+                    paddingVertical: 5,
                     borderRadius: 30,
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -76,7 +102,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({navigation}: IntroScreenProps)
                     <Text style={
                         {
                             color: '#ffffff',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: 'bold',
                             padding: 10,
                             borderRadius: 5,

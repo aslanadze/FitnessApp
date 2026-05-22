@@ -57,16 +57,16 @@ const HeightScreen: React.FC<HeightScreenProps> = ({navigation}) => {
             flex: 1,
             justifyContent: 'space-between',
             paddingHorizontal: 24,
-            paddingTop: 80,
+            paddingTop: 50,
             paddingBottom: 40,
             gap: 20,
             backgroundColor: '#1f2129'
         }}>
             <View style={{gap: 16, alignItems: 'center'}}>
-                <Text style={{fontSize: 35, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>What is Your
+                <Text style={{fontSize: 25, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>What is Your
                     Height?</Text>
                 <Text style={{
-                    fontSize: 20,
+                    fontSize: 15,
                     textAlign: 'center',
                     color: 'white', fontWeight: "ultralight"
                 }}>Height in cm. Don'
@@ -123,7 +123,7 @@ const HeightScreen: React.FC<HeightScreenProps> = ({navigation}) => {
                     <Text style={{
                         color: 'white',
                         fontWeight: 'bold',
-                        fontSize: 20,
+                        fontSize: 15,
                         padding: 10,
                         borderRadius: 5,
                         textAlign: 'center',

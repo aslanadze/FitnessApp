@@ -22,11 +22,11 @@ const RegisterCompleteScreen: React.FC<RegisterCompleteScreenProps> = ({navigati
         >
             <View style={{gap: 16, alignItems: 'center'}}>
                 <HeartHandshake size={100} color="#007bff"/>
-                <Text style={{fontSize: 35, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
+                <Text style={{fontSize: 25, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
                     Registration Complete
                 </Text>
                 <Text style={{
-                    fontSize: 20,
+                    fontSize: 15,
                     textAlign: 'center',
                     color: 'white', fontWeight: "ultralight"
                 }}>
@@ -53,7 +53,7 @@ const RegisterCompleteScreen: React.FC<RegisterCompleteScreenProps> = ({navigati
                     <Text style={{
                         color: 'white',
                         fontWeight: 'bold',
-                        fontSize: 20,
+                        fontSize: 15,
                         padding: 10,
                         borderRadius: 5,
                         textAlign: 'center',

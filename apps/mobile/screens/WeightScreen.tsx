@@ -69,21 +69,21 @@ const WeightScreen: React.FC<WeightScreenProps> = ({navigation}) => {
             flex: 1,
             justifyContent: 'space-between',
             paddingHorizontal: 24,
-            paddingTop: 80,
+            paddingTop: 50,
             paddingBottom: 40,
             gap: 20,
             backgroundColor: "#1f2129"
         }}>
             <View style={{gap: 16, alignItems: 'center'}}>
                 <Text style={{
-                    fontSize: 35, textAlign: 'center',
+                    fontSize: 25, textAlign: 'center',
                     fontWeight: 'bold',
                     color: 'white'
                 }}>
                     What is Your Weight?
                 </Text>
                 <Text style={{
-                    fontSize: 20, textAlign: 'center',
+                    fontSize: 15, textAlign: 'center',
                     color: 'white',
                     fontWeight: 'ultralight'
                 }}>
@@ -144,7 +144,7 @@ const WeightScreen: React.FC<WeightScreenProps> = ({navigation}) => {
                     <Text style={{
                         color: "#ffffff",
                         fontWeight: 'bold',
-                        fontSize: 20,
+                        fontSize: 15,
                         padding: 10,
                         borderRadius: 5,
                         textAlign: 'center',

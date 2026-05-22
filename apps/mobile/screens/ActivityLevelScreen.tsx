@@ -25,16 +25,16 @@ const ActivityLevelScreen: React.FC<ActivityLevelScreenProps> = ({navigation}) =
             flex: 1,
             backgroundColor: '#1f2129',
             paddingHorizontal: 24,
-            paddingTop: 80,
+            paddingTop: 50,
             paddingBottom: 40,
             justifyContent: 'space-between'
         }}>
             <View style={{gap: 16, alignItems: 'center'}}>
-                <Text style={{fontSize: 35, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
+                <Text style={{fontSize: 25, textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
                     Physical Activity Level?
                 </Text>
                 <Text style={{
-                    fontSize: 20,
+                    fontSize: 15,
                     textAlign: 'center',
                     color: 'white', fontWeight: "ultralight"
                 }}>
@@ -93,7 +93,7 @@ const ActivityLevelScreen: React.FC<ActivityLevelScreenProps> = ({navigation}) =
                     <Text style={{
                         color: 'white',
                         fontWeight: 'bold',
-                        fontSize: 20,
+                        fontSize: 15,
                         padding: 10,
                         borderRadius: 5,
                         textAlign: 'center',
